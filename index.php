@@ -15,4 +15,12 @@ class Movie
         $this->runningTime = $runningTime;
         $this->language = $language;
     }
+
+    //  definisco un metodo:
+    public function getHtml()
+    {
+        return "Title: " . $this->title
+            . "<br>Running Time: " . $this->runningTime
+            . "<br>Language " . $this->language;
+    }
 }
