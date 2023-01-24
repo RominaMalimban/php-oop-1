@@ -24,3 +24,12 @@ class Movie
             . "<br>Language " . $this->language;
     }
 }
+
+//Istanzio due oggetti `Movie` e stampo a schermo i valori delle relative proprietà:
+
+// Oggetto 1:
+$movie1 = new Movie("Babylon", "188 min", "english");
+$movie2 = new Movie("Kill Bill Volume 1", "111 min", "english");
+
+echo $movie1->getHtml();
+echo $movie2->getHtml();
